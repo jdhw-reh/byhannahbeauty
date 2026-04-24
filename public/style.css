@@ -47,13 +47,12 @@ body {
 .hero {
   position: relative;
   background-color: var(--blue);
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  padding: 60px 24px 120px;
+  padding: 60px 24px 100px;
 }
 
 /* Polka dot overlay */
@@ -382,8 +381,7 @@ body {
 
 @media (max-width: 600px) {
   .hero {
-    padding: 50px 20px 100px;
-    min-height: 100svh;
+    padding: 40px 20px 80px;
   }
 
   .services-grid {
