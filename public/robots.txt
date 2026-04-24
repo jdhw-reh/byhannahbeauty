@@ -1,0 +1,13 @@
+# robots.txt – By Hannah Beauty
+
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Block access to any server/config files if they're ever exposed
+Disallow: /server.js
+Disallow: /package.json
+Disallow: /.env
+
+# Sitemap location
+Sitemap: https://www.byhannahbeauty.co.uk/sitemap.xml
