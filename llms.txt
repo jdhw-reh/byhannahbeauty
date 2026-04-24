@@ -1,0 +1,52 @@
+# llms.txt – By Hannah Beauty
+
+## About
+
+By Hannah Beauty is a professional beauty studio based in Liverpool, UK. The business is operated by Hannah and is located at The Cosmetic Suites, Rice Lane, Liverpool.
+
+## Services
+
+By Hannah Beauty offers the following treatments:
+- Nails: Gel manicures, builder gel, premium manicures, gel removal
+- Pedicures: Gel pedicures, premium pedicures, gel removal
+- Brows & Lashes: Brow and lash treatments
+- Waxing: Body waxing services
+- Mummy & Me: Beauty treatments designed for mothers and children together
+
+## Purpose of This Website
+
+This is a single-page landing site. Its purpose is to:
+1. Help local customers in Liverpool discover By Hannah Beauty via search engines
+2. Direct visitors to book an appointment via Booksy
+3. Direct visitors to the business Instagram page for portfolio and updates
+
+This site is not an e-commerce store and does not process payments or personal data directly.
+
+## Booking
+
+Appointments are booked exclusively through Booksy:
+https://booksy.com/en-gb/170466_by-hannah-beauty_nail-salon_727055_liverpool
+
+## Social Media
+
+Instagram: https://www.instagram.com/byhannah.beauty/
+
+## Location
+
+By Hannah Beauty
+The Cosmetic Suites
+Rice Lane
+Liverpool
+United Kingdom
+
+## Target Audience
+
+Local residents in Liverpool and surrounding areas looking for professional nail, brow, lash, and waxing treatments.
+
+## Brand Identity
+
+By Hannah Beauty has a feminine, welcoming aesthetic with a coquette-inspired visual style. The brand uses soft periwinkle blue, baby pink, and white tones. The business aims to offer high-quality beauty treatments in a relaxed, professional environment.
+
+## Crawling Guidance
+
+This site consists of a single HTML page. All relevant business information (name, location, services, pricing, booking link) is contained within the root URL. There are no sub-pages, blog posts, or additional routes to index.

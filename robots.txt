@@ -1,0 +1,14 @@
+# robots.txt – By Hannah Beauty
+# https://byhannah.beauty (update to your live domain once deployed)
+
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Block access to any server/config files if they're ever exposed
+Disallow: /server.js
+Disallow: /package.json
+Disallow: /.env
+
+# Sitemap location (update domain once live)
+Sitemap: https://byhannah.beauty/sitemap.xml
