@@ -17,15 +17,15 @@ By Hannah Beauty offers the following treatments:
 
 This is a single-page landing site. Its purpose is to:
 1. Help local customers in Liverpool discover By Hannah Beauty via search engines
-2. Direct visitors to book an appointment via Booksy
+2. Direct visitors to book an appointment via Treatwell
 3. Direct visitors to the business Instagram page for portfolio and updates
 
 This site is not an e-commerce store and does not process payments or personal data directly.
 
 ## Booking
 
-Appointments are booked exclusively through Booksy:
-https://booksy.com/en-gb/170466_by-hannah-beauty_nail-salon_727055_liverpool
+Appointments are booked exclusively through Treatwell:
+https://trea.tw/8dJmnt9Eura9cnDaq
 
 ## Social Media
 
