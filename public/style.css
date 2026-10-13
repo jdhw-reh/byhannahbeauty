@@ -524,6 +524,22 @@ body {
   color: rgba(255,255,255,0.4);
 }
 
+.footer-credit {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 6px;
+}
+
+.footer-credit a {
+  color: var(--blue-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-credit a:hover {
+  color: var(--white);
+}
+
 /* =============================================
    RESPONSIVE
    ============================================= */
