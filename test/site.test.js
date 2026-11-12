@@ -58,3 +58,32 @@ test('every service has prices and a unique slug', () => {
     assert.ok(s.description.length <= 160, `${s.slug} description is ${s.description.length} chars`);
   }
 });
+
+const SERVICE_PAGES = services.map((s) => `/${s.slug}/`);
+
+test('home and service pages have one h1, a unique title and a self canonical', async () => {
+  const titles = new Set();
+  const pages = ['/', ...SERVICE_PAGES];
+  for (const p of pages) {
+    const res = await fetch(`${base}${p}`);
+    assert.strictEqual(res.status, 200, p);
+    const html = await res.text();
+    assert.strictEqual((html.match(/<h1[\s>]/g) || []).length, 1, `${p} h1 count`);
+    titles.add(html.match(/<title>(.*?)<\/title>/)[1]);
+    assert.ok(html.includes(`<link rel="canonical" href="${site.url}${p}">`), `${p} canonical`);
+    assert.ok(html.includes('class="book-bar"'), `${p} book bar`);
+    assert.ok(!html.includes('&amp;amp;'), `${p} double-escaped ampersand`);
+  }
+  assert.strictEqual(titles.size, pages.length);
+});
+
+test('service pages show every price and only images that exist', async () => {
+  for (const s of services) {
+    const html = await (await fetch(`${base}/${s.slug}/`)).text();
+    for (const i of s.groups.flatMap((g) => g.items)) assert.ok(html.includes(`>${i.price}<`), `${s.slug}: ${i.name}`);
+    for (const img of s.images) {
+      const res = await fetch(`${base}/assets/img/${img.file}`);
+      assert.match(res.headers.get('content-type'), /image\/jpeg/, img.file);
+    }
+  }
+});

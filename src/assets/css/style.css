@@ -542,6 +542,188 @@ body {
 }
 
 /* =============================================
+   SERVICE PAGES
+   ============================================= */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.page-hero {
+  background-color: var(--blue);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.25) 2px, transparent 2px);
+  background-size: 28px 28px;
+  padding: clamp(40px, 8vw, 72px) 0;
+  color: var(--navy);
+}
+
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 18ch;
+  margin-bottom: 18px;
+}
+
+.page-intro {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  max-width: 58ch;
+  margin-bottom: 14px;
+}
+
+.page-rating {
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.work,
+.prices,
+.reviews,
+.faqs {
+  padding: clamp(36px, 6vw, 56px) 0 0;
+}
+
+.faqs {
+  padding-bottom: clamp(48px, 8vw, 80px);
+}
+
+.prices h2,
+.reviews h2,
+.faqs h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.work-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 14px;
+  background: var(--blue-pale);
+}
+
+@media (min-width: 700px) {
+  .work-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+}
+
+.price-heading:not(:first-child) {
+  margin-top: 36px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 8px;
+}
+
+.price-table th,
+.price-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--blue-light);
+  text-align: left;
+  vertical-align: baseline;
+}
+
+.price-table th {
+  font-weight: 500;
+  color: var(--navy);
+  padding-right: 12px;
+}
+
+.price-time {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  padding-right: 16px !important;
+  text-align: right !important;
+}
+
+.price-amount {
+  color: var(--blue-deep);
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: right !important;
+  width: 4.5em;
+}
+
+.prices-note {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 16px 0 20px;
+}
+
+.prices-note a,
+.about-text a {
+  color: var(--blue-deep);
+  font-weight: 500;
+}
+
+.review-list {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 700px) {
+  .review-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.review {
+  background: var(--blue-pale);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.review blockquote {
+  line-height: 1.65;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.review figcaption {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.faqs details {
+  border-bottom: 1px solid var(--blue-light);
+}
+
+.faqs summary {
+  cursor: pointer;
+  padding: 16px 0;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.faqs details p {
+  padding: 0 0 18px;
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+/* =============================================
    SITE HEADER, SKIP LINK, FOCUS, BOOK BAR
    ============================================= */
 

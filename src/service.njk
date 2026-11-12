@@ -1,0 +1,83 @@
+---
+layout: base.njk
+pagination:
+  data: services
+  size: 1
+  alias: service
+permalink: "/{{ service.slug }}/"
+eleventyComputed:
+  title: "{{ service.title | safe }}"
+  description: "{{ service.description | safe }}"
+---
+    <section class="page-hero">
+      <div class="container">
+        <h1>{{ service.h1 }}</h1>
+        <p class="page-intro">{{ service.intro }}</p>
+        <p class="page-rating">★ {{ site.rating.value }} from {{ site.rating.count }} verified reviews on Treatwell</p>
+        <a class="btn btn-primary" href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book {{ service.name | lower }} on Treatwell</a>
+      </div>
+    </section>
+
+    {%- if service.images.length %}
+    <section class="work">
+      <div class="container">
+        <h2 class="visually-hidden">Recent {{ service.name | lower }}</h2>
+        <div class="work-grid">
+          {%- for img in service.images %}
+          <img src="/assets/img/{{ img.file }}" alt="{{ img.alt }}" width="{{ img.w }}" height="{{ img.h }}" loading="{% if loop.index <= 2 %}eager{% else %}lazy{% endif %}">
+          {%- endfor %}
+        </div>
+      </div>
+    </section>
+    {%- endif %}
+
+    <section class="prices">
+      <div class="container">
+        {%- set groups = service.groups %}
+        {% include "price-table.njk" %}
+        <p class="prices-note">Prices match my Treatwell listing, where you can see live availability.</p>
+        <a class="btn btn-primary" href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book on Treatwell</a>
+      </div>
+    </section>
+
+    {%- set matched = reviews | forService(service.slug) %}
+    {%- if matched.length %}
+    <section class="reviews">
+      <div class="container">
+        <h2>What clients say</h2>
+        <div class="review-list">
+          {%- for r in matched %}
+          <figure class="review">
+            <blockquote>{{ r.text }}</blockquote>
+            <figcaption>{{ r.name }} · {{ r.treatment }} · {{ r.date }}</figcaption>
+          </figure>
+          {%- endfor %}
+        </div>
+        <p class="prices-note">Verified reviews from <a href="{{ site.treatwellUrl }}" target="_blank" rel="noopener">my Treatwell page</a>.</p>
+      </div>
+    </section>
+    {%- endif %}
+
+    <section class="faqs">
+      <div class="container">
+        <h2>{{ service.name }} questions</h2>
+        {%- for f in service.faqs %}
+        <details>
+          <summary>{{ f.q }}</summary>
+          <p>{{ f.a }}</p>
+        </details>
+        {%- endfor %}
+        <p class="prices-note">Something else? <a href="{{ site.instagramDmUrl }}" target="_blank" rel="noopener">Message me on Instagram</a>.</p>
+      </div>
+    </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "{{ service.name }}",
+      "areaServed": ["Walton", "Orrell Park", "Aintree", "Liverpool"],
+      "provider": { "@id": "{{ site.url }}/#salon" },
+      "url": "{{ site.url }}/{{ service.slug }}/"
+    }
+    </script>

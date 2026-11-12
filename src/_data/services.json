@@ -10,19 +10,51 @@
       {
         "heading": "Manicures",
         "items": [
-          { "name": "Gel Manicure", "duration": "1h 30min", "price": "£20" },
-          { "name": "BIAB and Gel Manicure", "duration": "2h", "price": "£25" },
-          { "name": "Men's Manicure", "duration": "1h 30min", "price": "£15" },
-          { "name": "File & Polish (hands)", "duration": "45min", "price": "£15" }
+          {
+            "name": "Gel Manicure",
+            "duration": "1h 30min",
+            "price": "£20"
+          },
+          {
+            "name": "BIAB and Gel Manicure",
+            "duration": "2h",
+            "price": "£25"
+          },
+          {
+            "name": "Men's Manicure",
+            "duration": "1h 30min",
+            "price": "£15"
+          },
+          {
+            "name": "File & Polish (hands)",
+            "duration": "45min",
+            "price": "£15"
+          }
         ]
       },
       {
         "heading": "Nail extras",
         "items": [
-          { "name": "Additional Nail Art", "duration": "1h", "price": "£10" },
-          { "name": "Gel Removal", "duration": "45min", "price": "£10" },
-          { "name": "Nail Repair", "duration": "45min", "price": "£5" },
-          { "name": "Hand Massage", "duration": "15min", "price": "£5" }
+          {
+            "name": "Additional Nail Art",
+            "duration": "1h",
+            "price": "£10"
+          },
+          {
+            "name": "Gel Removal",
+            "duration": "45min",
+            "price": "£10"
+          },
+          {
+            "name": "Nail Repair",
+            "duration": "45min",
+            "price": "£5"
+          },
+          {
+            "name": "Hand Massage",
+            "duration": "15min",
+            "price": "£5"
+          }
         ]
       }
     ],
@@ -40,7 +72,56 @@
         "a": "Yes, book Gel Removal. If you have acrylics on, tell me before your appointment so I can prepare the right removal."
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "file": "nails-hand-painted-nail-art.jpg",
+        "alt": "Hand-painted nail art on nude gel nails, shown on a Nails by Hannah display",
+        "w": 600,
+        "h": 800
+      },
+      {
+        "file": "nails-nude-white-polka-dots.jpg",
+        "alt": "Nude gel nails with white polka dot nail art",
+        "w": 599,
+        "h": 800
+      },
+      {
+        "file": "nails-navy-with-glitter-accents.jpg",
+        "alt": "Navy gel manicure with glitter accent nails",
+        "w": 600,
+        "h": 800
+      },
+      {
+        "file": "nails-pastel-yellow-french-tips.jpg",
+        "alt": "Gel manicure with pastel yellow French tips",
+        "w": 600,
+        "h": 800
+      },
+      {
+        "file": "nails-dark-red-gel.jpg",
+        "alt": "Dark red gel manicure on short natural nails",
+        "w": 600,
+        "h": 800
+      },
+      {
+        "file": "nails-pale-pink-gel.jpg",
+        "alt": "Pale pink gel manicure",
+        "w": 600,
+        "h": 800
+      },
+      {
+        "file": "nails-rust-red-gel.jpg",
+        "alt": "Rust red gel manicure",
+        "w": 600,
+        "h": 800
+      },
+      {
+        "file": "nails-short-navy-gel.jpg",
+        "alt": "Short navy gel manicure",
+        "w": 600,
+        "h": 800
+      }
+    ],
     "video": "nails"
   },
   {
@@ -54,10 +135,26 @@
       {
         "heading": "Pedicures",
         "items": [
-          { "name": "Gel Pedicure", "duration": "45min", "price": "£15" },
-          { "name": "File & Polish (feet)", "duration": "30min", "price": "£10" },
-          { "name": "Gel Removal (toes)", "duration": "30min", "price": "£10" },
-          { "name": "Foot Massage", "duration": "15min", "price": "£5" }
+          {
+            "name": "Gel Pedicure",
+            "duration": "45min",
+            "price": "£15"
+          },
+          {
+            "name": "File & Polish (feet)",
+            "duration": "30min",
+            "price": "£10"
+          },
+          {
+            "name": "Gel Removal (toes)",
+            "duration": "30min",
+            "price": "£10"
+          },
+          {
+            "name": "Foot Massage",
+            "duration": "15min",
+            "price": "£5"
+          }
         ]
       }
     ],
@@ -85,27 +182,71 @@
       {
         "heading": "Brows",
         "items": [
-          { "name": "Brow Waxing", "duration": "15min", "price": "£7.50" },
-          { "name": "Eyebrow Tint", "duration": "10min", "price": "£7.50" },
-          { "name": "Brow Wax & Tint", "duration": "25min", "price": "£12.50" },
-          { "name": "Brow Lamination", "duration": "45min", "price": "£25" },
-          { "name": "Brow Lamination & Tint", "duration": "1h", "price": "£30" }
+          {
+            "name": "Brow Waxing",
+            "duration": "15min",
+            "price": "£7.50"
+          },
+          {
+            "name": "Eyebrow Tint",
+            "duration": "10min",
+            "price": "£7.50"
+          },
+          {
+            "name": "Brow Wax & Tint",
+            "duration": "25min",
+            "price": "£12.50"
+          },
+          {
+            "name": "Brow Lamination",
+            "duration": "45min",
+            "price": "£25"
+          },
+          {
+            "name": "Brow Lamination & Tint",
+            "duration": "1h",
+            "price": "£30"
+          }
         ]
       },
       {
         "heading": "Lashes",
         "items": [
-          { "name": "Eyelash Tint", "duration": "15min", "price": "£7.50" },
-          { "name": "Lash Lift", "duration": "45min", "price": "£25" },
-          { "name": "Lash Lift & Tint", "duration": "1h", "price": "£30" }
+          {
+            "name": "Eyelash Tint",
+            "duration": "15min",
+            "price": "£7.50"
+          },
+          {
+            "name": "Lash Lift",
+            "duration": "45min",
+            "price": "£25"
+          },
+          {
+            "name": "Lash Lift & Tint",
+            "duration": "1h",
+            "price": "£30"
+          }
         ]
       },
       {
         "heading": "Brows and lashes together",
         "items": [
-          { "name": "Eyebrow & Eyelash Tint", "duration": "20min", "price": "£15" },
-          { "name": "Lash Lift & Brow Lamination", "duration": "50min", "price": "£40" },
-          { "name": "Lash Lift & Brow Lamination (with tint)", "duration": "1h", "price": "£45" }
+          {
+            "name": "Eyebrow & Eyelash Tint",
+            "duration": "20min",
+            "price": "£15"
+          },
+          {
+            "name": "Lash Lift & Brow Lamination",
+            "duration": "50min",
+            "price": "£40"
+          },
+          {
+            "name": "Lash Lift & Brow Lamination (with tint)",
+            "duration": "1h",
+            "price": "£45"
+          }
         ]
       }
     ],
@@ -137,26 +278,86 @@
       {
         "heading": "Facial waxing",
         "items": [
-          { "name": "Upper Lip", "duration": "10min", "price": "£3" },
-          { "name": "Chin", "duration": "15min", "price": "£3" },
-          { "name": "Sides", "duration": "10min", "price": "£3" },
-          { "name": "Lip & Chin", "duration": "20min", "price": "£6" },
-          { "name": "Eyebrows", "duration": "20min", "price": "£7.50" },
-          { "name": "Full Face", "duration": "30min", "price": "£15" }
+          {
+            "name": "Upper Lip",
+            "duration": "10min",
+            "price": "£3"
+          },
+          {
+            "name": "Chin",
+            "duration": "15min",
+            "price": "£3"
+          },
+          {
+            "name": "Sides",
+            "duration": "10min",
+            "price": "£3"
+          },
+          {
+            "name": "Lip & Chin",
+            "duration": "20min",
+            "price": "£6"
+          },
+          {
+            "name": "Eyebrows",
+            "duration": "20min",
+            "price": "£7.50"
+          },
+          {
+            "name": "Full Face",
+            "duration": "30min",
+            "price": "£15"
+          }
         ]
       },
       {
         "heading": "Body waxing",
         "items": [
-          { "name": "Underarm", "duration": "30min", "price": "£15" },
-          { "name": "Bikini", "duration": "30min", "price": "£15" },
-          { "name": "Half Leg", "duration": "30min", "price": "£20" },
-          { "name": "Full Leg", "duration": "1h", "price": "£30" },
-          { "name": "Bikini & Half Leg", "duration": "1h", "price": "£30" },
-          { "name": "Bikini & Full Leg", "duration": "1h 15min", "price": "£40" },
-          { "name": "Bikini, Half Leg & Underarm", "duration": "1h 15min", "price": "£40" },
-          { "name": "Bikini, Full Leg & Underarm", "duration": "1h 30min", "price": "£50" },
-          { "name": "Hollywood & Full Leg", "duration": "1h 45min", "price": "£60" }
+          {
+            "name": "Underarm",
+            "duration": "30min",
+            "price": "£15"
+          },
+          {
+            "name": "Bikini",
+            "duration": "30min",
+            "price": "£15"
+          },
+          {
+            "name": "Half Leg",
+            "duration": "30min",
+            "price": "£20"
+          },
+          {
+            "name": "Full Leg",
+            "duration": "1h",
+            "price": "£30"
+          },
+          {
+            "name": "Bikini & Half Leg",
+            "duration": "1h",
+            "price": "£30"
+          },
+          {
+            "name": "Bikini & Full Leg",
+            "duration": "1h 15min",
+            "price": "£40"
+          },
+          {
+            "name": "Bikini, Half Leg & Underarm",
+            "duration": "1h 15min",
+            "price": "£40"
+          },
+          {
+            "name": "Bikini, Full Leg & Underarm",
+            "duration": "1h 30min",
+            "price": "£50"
+          },
+          {
+            "name": "Hollywood & Full Leg",
+            "duration": "1h 45min",
+            "price": "£60"
+          }
         ]
       }
     ],
@@ -184,8 +385,16 @@
       {
         "heading": "Mummy & Me packages",
         "items": [
-          { "name": "BIAB and Gel Manicure, plus nail treatment for a child", "duration": "2h 30min", "price": "£40" },
-          { "name": "Gel Manicure and Pedicure, plus nail treatment for a child", "duration": "3h", "price": "£55" }
+          {
+            "name": "BIAB and Gel Manicure, plus nail treatment for a child",
+            "duration": "2h 30min",
+            "price": "£40"
+          },
+          {
+            "name": "Gel Manicure and Pedicure, plus nail treatment for a child",
+            "duration": "3h",
+            "price": "£55"
+          }
         ]
       }
     ],

@@ -1,0 +1,17 @@
+{%- for group in groups %}
+<h2 class="price-heading">{{ group.heading }}</h2>
+<table class="price-table">
+  <thead class="visually-hidden">
+    <tr><th scope="col">Treatment</th><th scope="col">Time</th><th scope="col">Price</th></tr>
+  </thead>
+  <tbody>
+  {%- for item in group.items %}
+    <tr>
+      <th scope="row">{{ item.name }}</th>
+      <td class="price-time">{{ item.duration }}</td>
+      <td class="price-amount">{{ item.price }}</td>
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>
+{%- endfor %}

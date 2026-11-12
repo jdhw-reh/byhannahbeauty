@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const SITE = path.join(__dirname, '_site');
 
-app.use(express.static(SITE, { maxAge: '1h' }));
+app.use(express.static(SITE));
 
 // Anything that is not a built file is a real 404, not the home page.
 app.use((req, res) => res.status(404).sendFile(path.join(SITE, '404.html')));
