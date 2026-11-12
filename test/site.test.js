@@ -42,3 +42,19 @@ test('robots.txt and llms.txt are still served as text', async () => {
     assert.match(res.headers.get('content-type'), /text\/plain/, p);
   }
 });
+
+const services = require('../src/_data/services.json');
+
+test('every service has prices and a unique slug', () => {
+  const slugs = new Set(services.map((s) => s.slug));
+  assert.strictEqual(slugs.size, 5);
+  for (const s of services) {
+    const items = s.groups.flatMap((g) => g.items);
+    assert.ok(items.length > 0, `${s.slug} has no items`);
+    for (const i of items) {
+      assert.match(i.price, /^(from )?£\d/, `${s.slug}: ${i.name}`);
+      assert.ok(i.duration, `${s.slug}: ${i.name} duration`);
+    }
+    assert.ok(s.description.length <= 160, `${s.slug} description is ${s.description.length} chars`);
+  }
+});

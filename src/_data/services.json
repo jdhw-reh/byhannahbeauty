@@ -1,0 +1,201 @@
+[
+  {
+    "slug": "nails",
+    "name": "Nails",
+    "h1": "Gel nails, BIAB and manicures in Walton, Liverpool",
+    "title": "Gel Nails & BIAB in Walton, Liverpool L9 | By Hannah Beauty",
+    "description": "Gel manicures from £20, BIAB from £25 and nail art at By Hannah Beauty, 485 Rice Lane, Walton. See the full price list and book on Treatwell.",
+    "intro": "I do gel manicures, BIAB and nail art from my room at The Cosmetic Suites on Rice Lane. Simple designs like French tips, flowers, glitter and chrome are included in the price. I love doing nail art, so send me your inspiration on Instagram before you come.",
+    "groups": [
+      {
+        "heading": "Manicures",
+        "items": [
+          { "name": "Gel Manicure", "duration": "1h 30min", "price": "£20" },
+          { "name": "BIAB and Gel Manicure", "duration": "2h", "price": "£25" },
+          { "name": "Men's Manicure", "duration": "1h 30min", "price": "£15" },
+          { "name": "File & Polish (hands)", "duration": "45min", "price": "£15" }
+        ]
+      },
+      {
+        "heading": "Nail extras",
+        "items": [
+          { "name": "Additional Nail Art", "duration": "1h", "price": "£10" },
+          { "name": "Gel Removal", "duration": "45min", "price": "£10" },
+          { "name": "Nail Repair", "duration": "45min", "price": "£5" },
+          { "name": "Hand Massage", "duration": "15min", "price": "£5" }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between a gel manicure and BIAB?",
+        "a": "A gel manicure is filing, cuticle work and gel polish, and it lasts up to two weeks. BIAB (builder gel) adds a strengthening gel overlay on your natural nails first, which helps them grow out. If your nails break easily, book the BIAB."
+      },
+      {
+        "q": "Is nail art included?",
+        "a": "Basic designs are included with a gel manicure: French tips, flowers, glitter and small nail art. For themed nails, detailed designs on every nail or gems, add the Additional Nail Art option. If you're not sure which yours counts as, message me on Instagram with a photo."
+      },
+      {
+        "q": "Can you take off my old gel or acrylics?",
+        "a": "Yes, book Gel Removal. If you have acrylics on, tell me before your appointment so I can prepare the right removal."
+      }
+    ],
+    "images": [],
+    "video": "nails"
+  },
+  {
+    "slug": "pedicures",
+    "name": "Pedicures",
+    "h1": "Gel pedicures in Walton, Liverpool",
+    "title": "Gel Pedicures in Walton, Liverpool L9 | By Hannah Beauty",
+    "description": "Gel pedicures from £15 at By Hannah Beauty, 485 Rice Lane, Walton. Cuticle care, filing and gel polish. See prices and book on Treatwell.",
+    "intro": "A gel pedicure with me covers cuticle care, filing and a gel polish in the colour you choose. I have plenty to pick from, including French tips, nudes, cat eye and chrome. You can add a foot massage to any pedicure.",
+    "groups": [
+      {
+        "heading": "Pedicures",
+        "items": [
+          { "name": "Gel Pedicure", "duration": "45min", "price": "£15" },
+          { "name": "File & Polish (feet)", "duration": "30min", "price": "£10" },
+          { "name": "Gel Removal (toes)", "duration": "30min", "price": "£10" },
+          { "name": "Foot Massage", "duration": "15min", "price": "£5" }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between a gel pedicure and a file and polish?",
+        "a": "The gel pedicure uses gel polish and includes cuticle care. File and polish is the quicker option and uses standard nail varnish."
+      },
+      {
+        "q": "I have acrylic on my toes. Can you remove it?",
+        "a": "Let me know before your appointment if you have acrylic on your toes, so I can be ready for it."
+      }
+    ],
+    "images": [],
+    "video": "pedicures"
+  },
+  {
+    "slug": "brows-lashes",
+    "name": "Brows & Lashes",
+    "h1": "Brow lamination, lash lifts and tinting in Walton, Liverpool",
+    "title": "Brow Lamination & Lash Lifts in Walton, Liverpool L9 | By Hannah Beauty",
+    "description": "Brow waxing from £7.50, brow lamination and lash lifts from £25 at By Hannah Beauty, 485 Rice Lane, Walton. Full price list and Treatwell booking.",
+    "intro": "I do brow waxing, tinting and lamination, plus lash lifts and lash tints. A brow wax and tint gives you fuller, defined brows for three to five weeks. Most of these treatments need a patch test first, so read the note below if it's your first visit.",
+    "groups": [
+      {
+        "heading": "Brows",
+        "items": [
+          { "name": "Brow Waxing", "duration": "15min", "price": "£7.50" },
+          { "name": "Eyebrow Tint", "duration": "10min", "price": "£7.50" },
+          { "name": "Brow Wax & Tint", "duration": "25min", "price": "£12.50" },
+          { "name": "Brow Lamination", "duration": "45min", "price": "£25" },
+          { "name": "Brow Lamination & Tint", "duration": "1h", "price": "£30" }
+        ]
+      },
+      {
+        "heading": "Lashes",
+        "items": [
+          { "name": "Eyelash Tint", "duration": "15min", "price": "£7.50" },
+          { "name": "Lash Lift", "duration": "45min", "price": "£25" },
+          { "name": "Lash Lift & Tint", "duration": "1h", "price": "£30" }
+        ]
+      },
+      {
+        "heading": "Brows and lashes together",
+        "items": [
+          { "name": "Eyebrow & Eyelash Tint", "duration": "20min", "price": "£15" },
+          { "name": "Lash Lift & Brow Lamination", "duration": "50min", "price": "£40" },
+          { "name": "Lash Lift & Brow Lamination (with tint)", "duration": "1h", "price": "£45" }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do I need a patch test?",
+        "a": "Yes, for tints, lash lifts and brow lamination. Brow waxing on its own doesn't need one. Message me on Instagram before your first appointment and we'll sort it out."
+      },
+      {
+        "q": "What is brow lamination?",
+        "a": "It's like a lash lift for your brows. A solution relaxes the brow hairs so they can be set in place, which gives a fuller, brushed-up brow without microblading or semi-permanent make-up."
+      },
+      {
+        "q": "How long does a brow wax and tint last?",
+        "a": "Three to five weeks."
+      }
+    ],
+    "images": [],
+    "video": "brows-lashes"
+  },
+  {
+    "slug": "waxing",
+    "name": "Waxing",
+    "h1": "Face and body waxing in Walton, Liverpool",
+    "title": "Waxing in Walton, Liverpool L9: Face, Leg & Bikini | By Hannah Beauty",
+    "description": "Facial waxing from £3 and body waxing from £15 at By Hannah Beauty, 485 Rice Lane, Walton. Leg, bikini, underarm and Hollywood. Book on Treatwell.",
+    "intro": "I offer women's waxing for face and body, from a quick lip or chin wax to legs, bikini and underarms in one appointment. If it's your first wax and you have questions, message me on Instagram. I'm happy to talk you through it.",
+    "groups": [
+      {
+        "heading": "Facial waxing",
+        "items": [
+          { "name": "Upper Lip", "duration": "10min", "price": "£3" },
+          { "name": "Chin", "duration": "15min", "price": "£3" },
+          { "name": "Sides", "duration": "10min", "price": "£3" },
+          { "name": "Lip & Chin", "duration": "20min", "price": "£6" },
+          { "name": "Eyebrows", "duration": "20min", "price": "£7.50" },
+          { "name": "Full Face", "duration": "30min", "price": "£15" }
+        ]
+      },
+      {
+        "heading": "Body waxing",
+        "items": [
+          { "name": "Underarm", "duration": "30min", "price": "£15" },
+          { "name": "Bikini", "duration": "30min", "price": "£15" },
+          { "name": "Half Leg", "duration": "30min", "price": "£20" },
+          { "name": "Full Leg", "duration": "1h", "price": "£30" },
+          { "name": "Bikini & Half Leg", "duration": "1h", "price": "£30" },
+          { "name": "Bikini & Full Leg", "duration": "1h 15min", "price": "£40" },
+          { "name": "Bikini, Half Leg & Underarm", "duration": "1h 15min", "price": "£40" },
+          { "name": "Bikini, Full Leg & Underarm", "duration": "1h 30min", "price": "£50" },
+          { "name": "Hollywood & Full Leg", "duration": "1h 45min", "price": "£60" }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What does a full face wax include?",
+        "a": "Lip, chin, sides and brows."
+      },
+      {
+        "q": "I've never had a wax before. What should I know?",
+        "a": "Message me on Instagram with any questions before you book. I get asked about first waxes a lot and I'd rather you came in knowing what to expect."
+      }
+    ],
+    "images": [],
+    "video": "waxing"
+  },
+  {
+    "slug": "mummy-and-me",
+    "name": "Mummy & Me",
+    "h1": "Mummy & Me nail treatments in Walton, Liverpool",
+    "title": "Mummy & Me Nail Treatments in Liverpool L9 | By Hannah Beauty",
+    "description": "Mummy & Me nail packages from £40 for one adult and one child at By Hannah Beauty, 485 Rice Lane, Walton. Book on Treatwell.",
+    "intro": "Mummy & Me is a nail appointment for you and your little one together. You get a BIAB and gel manicure, and your child gets their own manicure treatment alongside you. The second package adds a gel pedicure for you.",
+    "groups": [
+      {
+        "heading": "Mummy & Me packages",
+        "items": [
+          { "name": "BIAB and Gel Manicure, plus nail treatment for a child", "duration": "2h 30min", "price": "£40" },
+          { "name": "Gel Manicure and Pedicure, plus nail treatment for a child", "duration": "3h", "price": "£55" }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How many people does the price cover?",
+        "a": "One adult and one child."
+      }
+    ],
+    "images": [],
+    "video": ""
+  }
+]
