@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/og-image.jpg">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Dancing+Script:wght@600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "@id": "{{ site.url }}/#salon",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "image": "{{ site.url }}/assets/img/og-image.jpg",
+    "priceRange": "£",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.address.venue }}, {{ site.address.street }}",
+      "addressLocality": "{{ site.address.city }}",
+      "postalCode": "{{ site.address.postcode }}",
+      "addressCountry": "GB"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": {{ site.geo.lat }}, "longitude": {{ site.geo.lng }} },
+    "openingHoursSpecification": [
+      {%- for h in site.hours %}
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": {{ h.days | dump | safe }}, "opens": "{{ h.opens }}", "closes": "{{ h.closes }}" }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ],
+    "sameAs": ["{{ site.instagramUrl }}", "{{ site.treatwellUrl }}"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="/">By Hannah <span>Beauty</span></a>
+    <nav class="site-nav" aria-label="Main">
+      {%- for item in site.nav %}
+      <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {%- endfor %}
+    </nav>
+    <a class="btn btn-book" href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book on Treatwell</a>
+  </header>
+
+  <main id="main">
+{{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-brand">🎀 By Hannah Beauty</p>
+      <address class="footer-address">
+        {{ site.address.venue }}, {{ site.address.street }}, {{ site.address.area }}, {{ site.address.city }} {{ site.address.postcode }}
+      </address>
+      <p class="footer-hours">{{ site.hoursText }}</p>
+      <div class="footer-links">
+        <a href="{{ site.instagramUrl }}" target="_blank" rel="noopener">Instagram</a>
+        <a href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Treatwell</a>
+        <a href="/mummy-and-me/">Mummy &amp; Me</a>
+      </div>
+      <p class="footer-copy">© 2026 By Hannah Beauty. All rights reserved.</p>
+      <p class="footer-credit">Website built by <a href="https://www.l9digital.co.uk/" target="_blank" rel="noopener">L9 Digital</a></p>
+    </div>
+  </footer>
+
+  <a class="book-bar" href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book on Treatwell</a>
+</body>
+</html>
