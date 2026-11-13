@@ -1,0 +1,106 @@
+{
+  "name": "By Hannah Beauty",
+  "url": "https://www.byhannahbeauty.co.uk",
+  "bookingUrl": "https://trea.tw/8dJmnt9Eura9cnDaq",
+  "treatwellUrl": "https://www.treatwell.co.uk/place/by-hannah-beauty/",
+  "instagramUrl": "https://www.instagram.com/byhannah.beauty/",
+  "instagramDmUrl": "https://ig.me/m/byhannah.beauty",
+  "address": {
+    "venue": "The Cosmetic Suites",
+    "street": "485 Rice Lane",
+    "area": "Walton",
+    "city": "Liverpool",
+    "postcode": "L9 8AP"
+  },
+  "geo": {
+    "lat": 53.4452,
+    "lng": -2.9623
+  },
+  "hours": [
+    {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "14:00"
+    },
+    {
+      "days": [
+        "Wednesday"
+      ],
+      "opens": "10:00",
+      "closes": "17:00"
+    }
+  ],
+  "hoursText": "Mon, Tue, Fri, Sat 10am to 2pm · Wed 10am to 5pm · Thu and Sun closed",
+  "rating": {
+    "value": "5.0",
+    "count": 34,
+    "source": "Treatwell",
+    "checked": "2026-11-12"
+  },
+  "nav": [
+    {
+      "label": "Nails",
+      "url": "/nails/"
+    },
+    {
+      "label": "Pedicures",
+      "url": "/pedicures/"
+    },
+    {
+      "label": "Brows & Lashes",
+      "url": "/brows-lashes/"
+    },
+    {
+      "label": "Waxing",
+      "url": "/waxing/"
+    },
+    {
+      "label": "Packages",
+      "url": "/packages/"
+    },
+    {
+      "label": "Gallery",
+      "url": "/gallery/"
+    },
+    {
+      "label": "Find us",
+      "url": "/about/"
+    }
+  ],
+  "hoursTable": [
+    [
+      "Monday",
+      "10am to 2pm"
+    ],
+    [
+      "Tuesday",
+      "10am to 2pm"
+    ],
+    [
+      "Wednesday",
+      "10am to 5pm"
+    ],
+    [
+      "Thursday",
+      "Closed"
+    ],
+    [
+      "Friday",
+      "10am to 2pm"
+    ],
+    [
+      "Saturday",
+      "10am to 2pm"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=485+Rice+Lane+Liverpool+L9+8AP"
+}

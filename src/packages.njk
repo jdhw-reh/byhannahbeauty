@@ -1,0 +1,35 @@
+---
+layout: base.njk
+permalink: /packages/
+title: "Nail, Brow & Holiday Beauty Packages in Liverpool | By Hannah Beauty"
+description: "Beauty packages from £32 at By Hannah Beauty, Walton: nails and brows, holiday prep with gel nails, pedicure and waxing. Book on Treatwell."
+---
+    <section class="page-hero">
+      <div class="container">
+        <h1>Beauty packages in Walton, Liverpool</h1>
+        <p class="page-intro">Each package puts a few treatments into one appointment and costs less than booking them one by one. They're popular before holidays, proms and nights out.</p>
+        <p class="page-rating">★ {{ site.rating.value }} from {{ site.rating.count }} verified reviews on Treatwell</p>
+      </div>
+    </section>
+
+    <section class="prices">
+      <div class="container">
+        <div class="package-detail-list">
+          {%- for p in packages.onTreatwell %}
+          <article class="package-detail">
+            <h2>{{ p.name }}</h2>
+            <p class="package-detail-meta"><strong>{{ p.price }}</strong> <s>{{ p.usualPrice }}</s> · {{ p.duration }}</p>
+            <p>{{ p.includes }}</p>
+            <a class="btn btn-primary" href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book on Treatwell</a>
+          </article>
+          {%- endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="faqs">
+      <div class="container">
+        <h2>Mummy &amp; Me and other occasions</h2>
+        <p class="package-detail-text">I also do <a href="/mummy-and-me/">Mummy &amp; Me nail appointments</a> for one adult and one child. If you're getting ready for a prom or a holiday and want something that isn't listed here, <a href="{{ site.instagramDmUrl }}" target="_blank" rel="noopener">message me on Instagram</a> and tell me what you have in mind.</p>
+      </div>
+    </section>

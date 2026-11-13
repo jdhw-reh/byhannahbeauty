@@ -1,0 +1,26 @@
+[
+  {
+    "file": "nails-coral-pink-gel.jpg",
+    "alt": "Coral pink gel manicure",
+    "w": 600,
+    "h": 800
+  },
+  {
+    "file": "nails-dark-gel-patterned-accents.jpg",
+    "alt": "Dark gel manicure with patterned accent nails",
+    "w": 800,
+    "h": 800
+  },
+  {
+    "file": "nails-natural-short-manicure.jpg",
+    "alt": "Natural-look manicure on short nails",
+    "w": 600,
+    "h": 800
+  },
+  {
+    "file": "nails-dark-gel-short.jpg",
+    "alt": "Dark gel manicure on short nails",
+    "w": 600,
+    "h": 800
+  }
+]

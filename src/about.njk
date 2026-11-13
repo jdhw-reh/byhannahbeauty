@@ -1,0 +1,65 @@
+---
+layout: base.njk
+permalink: /about/
+title: "Find By Hannah Beauty | 485 Rice Lane, Walton, Liverpool L9 8AP"
+description: "By Hannah Beauty is inside The Cosmetic Suites, 485 Rice Lane, Walton, Liverpool L9 8AP. Opening hours, directions, parking and how to book."
+---
+    <section class="page-hero">
+      <div class="container">
+        <h1>Find By Hannah Beauty on Rice Lane</h1>
+        <p class="page-intro">I'm Hannah. I work from my own room inside The Cosmetic Suites at {{ site.address.street }}, {{ site.address.area }}. It's just me, so you see the same person every visit.</p>
+        <a class="btn btn-primary" href="{{ site.directionsUrl }}" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </section>
+
+    <section class="prices">
+      <div class="container about-grid">
+        <div>
+          <h2>Address</h2>
+          <address class="find-address">
+            {{ site.name }}<br>
+            {{ site.address.venue }}<br>
+            {{ site.address.street }}, {{ site.address.area }}<br>
+            {{ site.address.city }} {{ site.address.postcode }}
+          </address>
+
+          <h2 class="price-heading">Getting here</h2>
+          <ul class="plain-list">
+            <li>Orrell Park station is around the corner.</li>
+            <li>Rice Lane station is about a 10 minute walk.</li>
+            <li>There is a bus stop close by.</li>
+            <li>Free parking is available.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Opening hours</h2>
+          <table class="price-table">
+            <tbody>
+              {%- for row in site.hoursTable %}
+              <tr><th scope="row">{{ row[0] }}</th><td class="price-amount hours-cell">{{ row[1] }}</td></tr>
+              {%- endfor %}
+            </tbody>
+          </table>
+          <p class="prices-note">I work some evenings too. Those are arranged with me directly, so <a href="{{ site.instagramDmUrl }}" target="_blank" rel="noopener">message me on Instagram</a> and we'll find a time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="container about-photos">
+        <img src="/assets/img/shopfront-the-cosmetic-suites-rice-lane.jpg" alt="The Cosmetic Suites shopfront at 485 Rice Lane, Walton" width="800" height="500" loading="lazy">
+        <img src="/assets/img/nail-desk-treatment-room.jpg" alt="Hannah's nail desk and chairs in her treatment room" width="800" height="500" loading="lazy">
+      </div>
+    </section>
+
+    <section class="faqs">
+      <div class="container">
+        <h2>Booking</h2>
+        <p class="package-detail-text">Appointments are booked online through Treatwell, where you can see the times I have free. If you have a question first, whether it's about a first wax or a nail design you've seen, Instagram is the best place to reach me.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book on Treatwell</a>
+          <a class="btn btn-secondary" href="{{ site.instagramDmUrl }}" target="_blank" rel="noopener">Message on Instagram</a>
+        </div>
+      </div>
+    </section>

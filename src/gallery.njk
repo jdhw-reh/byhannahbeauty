@@ -1,0 +1,25 @@
+---
+layout: base.njk
+permalink: /gallery/
+title: "Nail Art & Gel Nails Gallery | By Hannah Beauty, Liverpool"
+description: "Photos of gel manicures, BIAB and nail art by Hannah at By Hannah Beauty, Rice Lane, Walton. See recent work, then book on Treatwell."
+---
+    <section class="page-hero">
+      <div class="container">
+        <h1>Nail art and gel nails gallery</h1>
+        <p class="page-intro">Some of my recent sets. I post new work on Instagram most weeks, so have a look there too, and send me anything you'd like to try.</p>
+        <a class="btn btn-primary" href="{{ site.instagramUrl }}" target="_blank" rel="noopener">See more on Instagram</a>
+      </div>
+    </section>
+
+    <section class="work work--gallery">
+      <div class="container">
+        <div class="work-grid">
+          {%- for img in services[0].images.concat(galleryExtra) %}
+          <img src="/assets/img/{{ img.file }}" alt="{{ img.alt }}" width="{{ img.w }}" height="{{ img.h }}" loading="{% if loop.index <= 4 %}eager{% else %}lazy{% endif %}">
+          {%- endfor %}
+        </div>
+        <p class="prices-note">Like one of these? Mention it when you book, or message me a screenshot.</p>
+        <a class="btn btn-primary" href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book nails on Treatwell</a>
+      </div>
+    </section>

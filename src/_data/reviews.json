@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Natalie",
+    "date": "September 2026",
+    "treatment": "Builder Gel Manicure",
+    "services": ["nails"],
+    "featured": true,
+    "text": "I had such a lovely nail appointment with Hannah! She was so friendly, professional and paid such attention to detail. My nails look absolutely beautiful and the finish is perfect. Hannah made me feel really comfortable throughout and I’m so happy with the results. I’ll definitely be booking with her again! 💅✨"
+  },
+  {
+    "name": "Caitlyn",
+    "date": "September 2026",
+    "treatment": "Manicure and Gel Pedicure",
+    "services": ["nails", "pedicures"],
+    "featured": true,
+    "text": "Best experience I’ve ever had getting my nails done and i’ve been a lot of places, I will be returning to Hannah and have finally found my salon :)"
+  },
+  {
+    "name": "Paula",
+    "date": "October 2026",
+    "treatment": "Builder Gel Manicure",
+    "services": ["nails"],
+    "featured": false,
+    "text": "Fantastic nails done by Hannah. The attention to detail that Hannah has it brilliant and she listens to you and guides you with many different types of nails and colours and offers great advice. Thanks Hannah."
+  },
+  {
+    "name": "Marie",
+    "date": "August 2026",
+    "treatment": "Builder Gel Manicure",
+    "services": ["nails"],
+    "featured": false,
+    "text": "Salon really relaxed friendly atmosphere, Hannah was lovely and I’m extremely pleased with my nails! Thank you Hannah see you again in a few weeks!"
+  },
+  {
+    "name": "Abbey",
+    "date": "June 2026",
+    "treatment": "Gel Pedicure and Builder Gel Manicure",
+    "services": ["nails", "pedicures"],
+    "featured": false,
+    "text": "So friendly and welcoming, done a great job on my prom nails. Would definitely recommend for the price, thank you Hannah."
+  },
+  {
+    "name": "Sian",
+    "date": "July 2026",
+    "treatment": "Gel Pedicure",
+    "services": ["pedicures"],
+    "featured": false,
+    "text": "Amazing pedicure and Hannah was so friendly too! Will deffo be back"
+  },
+  {
+    "name": "Ciara",
+    "date": "September 2026",
+    "treatment": "Eyebrow Waxing",
+    "services": ["brows-lashes", "waxing"],
+    "featured": true,
+    "text": "Really relaxed atmosphere, I let her know I get a lot of redness with eyebrow wax and she did her best to accommodate me both in technique and with the products she used. She’s also very knowledgeable and is happy to answer questions about various treatments. I’m happy :)"
+  },
+  {
+    "name": "Leah",
+    "date": "August 2026",
+    "treatment": "Eyebrow & Eyelash Tinting",
+    "services": ["brows-lashes"],
+    "featured": false,
+    "text": "In love with the way Hannah has done my eyebrows, will be coming back again! She was so lovely and made me feel so comfy and welcome on my first visit! 🤩💞"
+  },
+  {
+    "name": "Donna",
+    "date": "October 2026",
+    "treatment": "Eyebrow & Eyelash Tinting",
+    "services": ["brows-lashes"],
+    "featured": false,
+    "text": "always love coming here. Hannah always makes you feel welcome"
+  },
+  {
+    "name": "Hannah",
+    "date": "July 2026",
+    "treatment": "Eyebrow & Eyelash Tinting and Bikini Waxing",
+    "services": ["waxing"],
+    "featured": false,
+    "text": "Hannah was really thorough and made me feel at ease. She is also really friendly and great to have a natter with. I am really pleased with the results and will be booking again. Thank you hannah xx"
+  },
+  {
+    "name": "Emma",
+    "date": "August 2026",
+    "treatment": "Underarm Waxing",
+    "services": ["waxing"],
+    "featured": false,
+    "text": "Hannah is so lovely and I would highly recommend booking an appointment with her as she is exceptional at what she does."
+  }
+]
