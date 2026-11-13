@@ -35,7 +35,7 @@ test('stylesheet is served as CSS', async () => {
   assert.match(res.headers.get('content-type'), /text\/css/);
 });
 
-test('robots.txt and llms.txt are still served as text', async () => {
+test('robots.txt and llms.txt are served as text', async () => {
   for (const p of ['/robots.txt', '/llms.txt']) {
     const res = await fetch(`${base}${p}`);
     assert.strictEqual(res.status, 200, p);
@@ -119,4 +119,31 @@ test('about page shows the postcode and all seven days', async () => {
   const html = await (await fetch(`${base}/about/`)).text();
   assert.ok(html.includes(site.address.postcode));
   for (const [day] of site.hoursTable) assert.ok(html.includes(day), day);
+});
+
+const ALL_PAGES = ['/', ...SERVICE_PAGES, '/packages/', '/gallery/', '/about/'];
+
+test('sitemap is XML and lists exactly the nine pages', async () => {
+  const res = await fetch(`${base}/sitemap.xml`);
+  assert.match(res.headers.get('content-type'), /xml/);
+  const xml = await res.text();
+  assert.ok(xml.startsWith('<?xml'), 'starts with the XML declaration');
+  for (const p of ALL_PAGES) assert.ok(xml.includes(`<loc>${site.url}${p}</loc>`), p);
+  assert.strictEqual((xml.match(/<loc>/g) || []).length, ALL_PAGES.length);
+});
+
+test('robots.txt points at the sitemap and llms.txt lists the pages', async () => {
+  const robots = await (await fetch(`${base}/robots.txt`)).text();
+  assert.ok(robots.includes(`Sitemap: ${site.url}/sitemap.xml`));
+  const llms = await (await fetch(`${base}/llms.txt`)).text();
+  for (const p of ALL_PAGES) assert.ok(llms.includes(`${site.url}${p})`), p);
+  assert.ok(!llms.includes('&amp;'), 'no HTML escaping in a text file');
+  assert.ok(!/single HTML page|no sub-pages/i.test(llms));
+});
+
+test('social image and favicon exist', async () => {
+  const og = await fetch(`${base}/assets/img/og-image.jpg`);
+  assert.match(og.headers.get('content-type'), /image\/jpeg/);
+  const icon = await fetch(`${base}/assets/img/favicon.svg`);
+  assert.match(icon.headers.get('content-type'), /image\/svg/);
 });

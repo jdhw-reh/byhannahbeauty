@@ -1,0 +1,30 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.name }}
+
+> {{ site.name }} is a one-person nail and beauty studio run by Hannah, inside {{ site.address.venue }} at {{ site.address.street }}, {{ site.address.area }}, {{ site.address.city }} {{ site.address.postcode }}, UK. Treatments: gel nails, BIAB, pedicures, brows, lashes and waxing.
+
+## Key facts
+
+- Address: {{ site.address.venue }}, {{ site.address.street }}, {{ site.address.area }}, {{ site.address.city }} {{ site.address.postcode }}
+- Opening hours: {{ site.hoursText | safe }}. Some evenings by arrangement over Instagram.
+- Booking: online through Treatwell at {{ site.bookingUrl }}
+- Questions: Instagram at {{ site.instagramUrl }}
+- Reviews: {{ site.rating.value }} from {{ site.rating.count }} verified reviews on Treatwell (checked {{ site.rating.checked }})
+- Getting there: Orrell Park station is around the corner, Rice Lane station is about a 10 minute walk, and free parking is available.
+
+## Pages
+
+- [Home]({{ site.url }}/): overview, treatment list with starting prices, reviews and location
+{%- for s in services %}
+- [{{ s.name | safe }}]({{ site.url }}/{{ s.slug }}/): {{ s.blurb }}, from {{ s | fromPrice }}. Full price list with durations.
+{%- endfor %}
+- [Packages]({{ site.url }}/packages/): bundles of treatments at a lower combined price
+- [Gallery]({{ site.url }}/gallery/): photos of Hannah's nail work
+- [Find us]({{ site.url }}/about/): address, opening hours, directions and parking
+
+## Prices
+
+Prices on the service pages match the Treatwell listing. Treatwell shows live availability and is the source to trust if the two ever differ.
