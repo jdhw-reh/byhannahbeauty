@@ -94,8 +94,9 @@ const galleryExtra = require('../src/_data/galleryExtra.json');
 test('home page links to every service with its lowest price', async () => {
   const html = await (await fetch(`${base}/`)).text();
   for (const s of services) assert.ok(html.includes(`href="/${s.slug}/"`), s.slug);
-  assert.ok(html.includes('from £15<'), 'nails from £15, ignoring add-ons');
-  assert.ok(html.includes('from £10<'), 'pedicures from £10, ignoring add-ons');
+  for (const s of services) assert.ok(html.includes(`from ${s.from}<`), `${s.slug} from ${s.from}`);
+  assert.strictEqual(services.find((s) => s.slug === 'nails').from, '£20');
+  assert.strictEqual(services.find((s) => s.slug === 'pedicures').from, '£15');
   assert.ok(html.includes('from £3<'), 'waxing from £3');
   assert.ok(html.includes('from £7.50<'), 'brows from £7.50');
 });

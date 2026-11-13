@@ -123,7 +123,8 @@
       }
     ],
     "video": "nails",
-    "blurb": "Gel manicures, BIAB and nail art"
+    "blurb": "Gel manicures, BIAB and nail art",
+    "from": "£20"
   },
   {
     "slug": "pedicures",
@@ -176,7 +177,8 @@
     ],
     "images": [],
     "video": "pedicures",
-    "blurb": "Gel pedicures and file and polish"
+    "blurb": "Gel pedicures and file and polish",
+    "from": "£15"
   },
   {
     "slug": "brows-lashes",
@@ -273,7 +275,8 @@
     ],
     "images": [],
     "video": "brows-lashes",
-    "blurb": "Waxing, tinting, lamination and lash lifts"
+    "blurb": "Waxing, tinting, lamination and lash lifts",
+    "from": "£7.50"
   },
   {
     "slug": "waxing",
@@ -381,7 +384,8 @@
     ],
     "images": [],
     "video": "waxing",
-    "blurb": "Face and body waxing"
+    "blurb": "Face and body waxing",
+    "from": "£3"
   },
   {
     "slug": "mummy-and-me",
@@ -419,6 +423,7 @@
     ],
     "images": [],
     "video": "",
-    "blurb": "A nail appointment for you and your child"
+    "blurb": "A nail appointment for you and your child",
+    "from": "£40"
   }
 ]
