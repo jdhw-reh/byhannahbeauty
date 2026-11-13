@@ -122,7 +122,8 @@
         "h": 800
       }
     ],
-    "video": "nails"
+    "video": "nails",
+    "blurb": "Gel manicures, BIAB and nail art"
   },
   {
     "slug": "pedicures",
@@ -144,7 +145,12 @@
             "name": "File & Polish (feet)",
             "duration": "30min",
             "price": "£10"
-          },
+          }
+        ]
+      },
+      {
+        "heading": "Pedicure extras",
+        "items": [
           {
             "name": "Gel Removal (toes)",
             "duration": "30min",
@@ -169,7 +175,8 @@
       }
     ],
     "images": [],
-    "video": "pedicures"
+    "video": "pedicures",
+    "blurb": "Gel pedicures and file and polish"
   },
   {
     "slug": "brows-lashes",
@@ -265,7 +272,8 @@
       }
     ],
     "images": [],
-    "video": "brows-lashes"
+    "video": "brows-lashes",
+    "blurb": "Waxing, tinting, lamination and lash lifts"
   },
   {
     "slug": "waxing",
@@ -372,7 +380,8 @@
       }
     ],
     "images": [],
-    "video": "waxing"
+    "video": "waxing",
+    "blurb": "Face and body waxing"
   },
   {
     "slug": "mummy-and-me",
@@ -401,10 +410,15 @@
     "faqs": [
       {
         "q": "How many people does the price cover?",
-        "a": "One adult and one child."
+        "a": "One adult and one child. I can add more children, but we need to agree that before the appointment, so message me on Instagram first."
+      },
+      {
+        "q": "What age is it for?",
+        "a": "It works best for children aged 7 to 14."
       }
     ],
     "images": [],
-    "video": ""
+    "video": "",
+    "blurb": "A nail appointment for you and your child"
   }
 ]

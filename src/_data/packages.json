@@ -1,31 +1,47 @@
 {
   "onTreatwell": [
     {
-      "name": "The Essential Holiday Prep",
-      "includes": "Gel manicure, gel pedicure and a bikini or underarm wax",
-      "duration": "2h 45min",
-      "price": "£45",
-      "usualPrice": "£50"
-    },
-    {
       "name": "Nails and Brows",
-      "includes": "BIAB overlay on your natural nails with a brow treatment",
+      "includes": "A BIAB overlay on your natural nails, plus a brow wax and a tint matched to you.",
       "duration": "2h 25min",
       "price": "£32",
       "usualPrice": "£37.50"
     },
     {
+      "name": "The Essential Holiday Prep",
+      "includes": "Gel manicure, gel pedicure and either a bikini or an underarm wax. Simple nail art such as glitter, French tips, chrome or cat eye is included. I'll message you before your appointment to check which wax you want. You need at least two weeks of hair growth for the wax.",
+      "duration": "2h 45min",
+      "price": "£45",
+      "usualPrice": "£50"
+    },
+    {
       "name": "Nails, Toes and Brows",
-      "includes": "BIAB manicure, pedicure and a brow service",
+      "includes": "A BIAB manicure, a pedicure and a brow wax and tint. Pick any colours, and add a little nail art, glitter or chrome on fingers or toes if you like.",
       "duration": "3h 10min",
       "price": "£50",
       "usualPrice": "£52.50"
     }
   ],
   "toConfirmWithHannah": [
-    { "name": "The Ultimate Holiday Prep", "siteSays": "BIAB Mani, Gel Pedi, Half Leg Wax & Underarm OR Bikini Wax, 4h 15min, £65", "note": "On the current site but not listed on Treatwell" },
-    { "name": "The Full Body Holiday Prep", "siteSays": "BIAB Mani, Gel Pedi and a Full Wax Combo, 4h 45min, £85", "note": "On the current site but not listed on Treatwell" },
-    { "name": "Prom Glam Duo", "siteSays": "3h 15min, £35", "note": "No description; booked by Instagram DM" },
-    { "name": "Prom Besties", "siteSays": "5h 15min, £45", "note": "No description; booked by Instagram DM" }
+    {
+      "name": "The Ultimate Holiday Prep",
+      "siteSays": "BIAB Mani, Gel Pedi, Half Leg Wax & Underarm OR Bikini Wax, 4h 15min, £65",
+      "note": "On the current site but not listed on Treatwell"
+    },
+    {
+      "name": "The Full Body Holiday Prep",
+      "siteSays": "BIAB Mani, Gel Pedi and a Full Wax Combo, 4h 45min, £85",
+      "note": "On the current site but not listed on Treatwell"
+    },
+    {
+      "name": "Prom Glam Duo",
+      "siteSays": "3h 15min, £35",
+      "note": "No description; booked by Instagram DM"
+    },
+    {
+      "name": "Prom Besties",
+      "siteSays": "5h 15min, £45",
+      "note": "No description; booked by Instagram DM"
+    }
   ]
 }

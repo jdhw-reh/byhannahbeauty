@@ -61,9 +61,9 @@ test('every service has prices and a unique slug', () => {
 
 const SERVICE_PAGES = services.map((s) => `/${s.slug}/`);
 
-test('home and service pages have one h1, a unique title and a self canonical', async () => {
+test('every page has one h1, a unique title and a self canonical', async () => {
   const titles = new Set();
-  const pages = ['/', ...SERVICE_PAGES];
+  const pages = ['/', ...SERVICE_PAGES, '/packages/', '/gallery/', '/about/'];
   for (const p of pages) {
     const res = await fetch(`${base}${p}`);
     assert.strictEqual(res.status, 200, p);
@@ -86,4 +86,37 @@ test('service pages show every price and only images that exist', async () => {
       assert.match(res.headers.get('content-type'), /image\/jpeg/, img.file);
     }
   }
+});
+
+const packages = require('../src/_data/packages.json');
+const galleryExtra = require('../src/_data/galleryExtra.json');
+
+test('home page links to every service with its lowest price', async () => {
+  const html = await (await fetch(`${base}/`)).text();
+  for (const s of services) assert.ok(html.includes(`href="/${s.slug}/"`), s.slug);
+  assert.ok(html.includes('from £15<'), 'nails from £15, ignoring add-ons');
+  assert.ok(html.includes('from £10<'), 'pedicures from £10, ignoring add-ons');
+  assert.ok(html.includes('from £3<'), 'waxing from £3');
+  assert.ok(html.includes('from £7.50<'), 'brows from £7.50');
+});
+
+test('packages page lists only the packages bookable on Treatwell', async () => {
+  const html = await (await fetch(`${base}/packages/`)).text();
+  for (const p of packages.onTreatwell) assert.ok(html.includes(p.name) && html.includes(p.price), p.name);
+  for (const p of packages.toConfirmWithHannah) assert.ok(!html.includes(p.name), `${p.name} should not be shown`);
+});
+
+test('gallery and about images exist', async () => {
+  const files = [...services[0].images, ...galleryExtra].map((i) => i.file)
+    .concat(['shopfront-the-cosmetic-suites-rice-lane.jpg', 'nail-desk-treatment-room.jpg']);
+  for (const f of files) {
+    const res = await fetch(`${base}/assets/img/${f}`);
+    assert.match(res.headers.get('content-type'), /image\/jpeg/, f);
+  }
+});
+
+test('about page shows the postcode and all seven days', async () => {
+  const html = await (await fetch(`${base}/about/`)).text();
+  assert.ok(html.includes(site.address.postcode));
+  for (const [day] of site.hoursTable) assert.ok(html.includes(day), day);
 });
