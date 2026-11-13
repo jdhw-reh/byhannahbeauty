@@ -148,3 +148,15 @@ test('social image and favicon exist', async () => {
   const icon = await fetch(`${base}/assets/img/favicon.svg`);
   assert.match(icon.headers.get('content-type'), /image\/svg/);
 });
+
+test('home hero shows the Treatwell Top Rated badge', async () => {
+  const html = await (await fetch(`${base}/`)).text();
+  const hero = html.slice(html.indexOf('class="hero"'), html.indexOf('class="home-intro"'));
+  assert.ok(hero.includes(`${site.accolade.label} on ${site.accolade.source}`));
+});
+
+test('brow wax and tint is described as lasting two to three weeks', async () => {
+  const html = await (await fetch(`${base}/brows-lashes/`)).text();
+  assert.ok(html.includes('Two to three weeks.'));
+  assert.ok(!/three to five weeks/i.test(html));
+});

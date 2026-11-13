@@ -14,7 +14,7 @@ eleventyComputed:
       <div class="container">
         <h1>{{ service.h1 }}</h1>
         <p class="page-intro">{{ service.intro }}</p>
-        <p class="page-rating">★ {{ site.rating.value }} from {{ site.rating.count }} verified reviews on Treatwell</p>
+        <p class="page-rating">★ {{ site.accolade.label }} on Treatwell · {{ site.rating.value }} from {{ site.rating.count }} verified reviews</p>
         <a class="btn btn-primary" href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book {{ service.name | lower }} on Treatwell</a>
       </div>
     </section>

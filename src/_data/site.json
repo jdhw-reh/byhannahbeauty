@@ -102,5 +102,9 @@
       "Closed"
     ]
   ],
-  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=485+Rice+Lane+Liverpool+L9+8AP"
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=485+Rice+Lane+Liverpool+L9+8AP",
+  "accolade": {
+    "label": "Top Rated 2026",
+    "source": "Treatwell"
+  }
 }
